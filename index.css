@@ -80,3 +80,26 @@
 .memes__description {
   text-align: center;
 }
+
+/* cat */
+.cat {
+  margin-top: 100px;
+}
+
+.cat__title {
+  font-weight: 400;
+}
+
+@keyframes catWalkin {
+  from {
+    transform: translateX(100px);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+.cat__img {
+  animation: 3s catWalkin infinite ease-in-out alternate;
+}
