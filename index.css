@@ -90,7 +90,7 @@
   font-weight: 400;
 }
 
-@keyframes catWalkin {
+@keyframes cat-walkin {
   from {
     transform: translateX(100px);
   }
@@ -101,5 +101,5 @@
 }
 
 .cat__img {
-  animation: 3s catWalkin infinite ease-in-out alternate;
+  animation: cat-walkin 2.9s ease-in-out infinite;
 }
