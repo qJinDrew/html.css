@@ -5,102 +5,43 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Тренируем навыки">
+  <link rel="stylesheet" href="./index.css">
   <title>Hi world</title>
 </head>
 
 <body class="body">
+  <header class="header">
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a class="link nav__link" href="https://github.com/qJinDrew" target="_blank">Виталя<span
+              class="title__span2">JD</span>
+          </a>
+        </li>
+        <li class="nav__item">
+          <a class="link nav__link" href="https://github.com/Shekko777" target="_blank">Ванька<span
+              class="title__span">JS</span></a>
+        </li>
+      </ul>
+    </nav>
+  </header>
 
-  <style>
-    /* ОБЩИЕ СТИЛИ */
-    .body {
-      font-size: 18px;
-      color: #000;
-    }
+  <main class="main">
+    <h2 class="main__title">Наши мемы</h2>
+    <!--  Мемасы  -->
+    <ul class="memes">
+      <li class="memes__item">
+        <img class="memes__img" src="./images/memes.jpg" alt="memes">
+        <p class="memes__description">Когда тестировщик ну очень сильно требует поправок</p>
+      </li>
+      <li class="memes__item">
+        <img class="memes__img" src="./images/memes2.jpg" alt="memes">
+        <p class="memes__description">Программист на HTML</p>
+      </li>
+    </ul>
 
-    .link {
-      text-decoration: none;
-      color: #000;
-    }
+  </main>
 
-    /* Стили для всего HEADER */
-    .header {
-      border-radius: 10px;
-      max-width: 980px;
-      width: 100%;
-      margin: 0 auto;
-      padding: 15px;
-      box-sizing: border-box;
-      background-color: #f5f5f5;
-    }
-
-
-    .nav__list {
-      display: flex;
-      gap: 15px;
-      list-style: none;
-      margin: 0;
-      padding: 0;
-    }
-
-
-    .nav__link {
-      font-size: 24px;
-      font-weight: 700;
-    }
-
-    .title__span {
-      color: #ffa500;
-    }
-
-    .title__span2 {
-      color: #0692ef;
-    }
-
-    /* main  */
-    .main__figure img {
-      margin-top: 0;
-      height: 400px;
-    }
-
-    .main__figure {
-      margin-top: 30px;
-      margin-right: center;
-    }
-
-    .header__figcaption {
-      color: blueviolet;
-      font-size: larger;
-      text-align: center;
-    }
-  </style>
-  </head>
-
-  <body class="body">
-    <header class="header">
-      <nav class="nav">
-        <ul class="nav__list">
-          <li class="nav__item">
-            <a class="link nav__link" href="https://github.com/qJinDrew" target="_blank">Виталя<span
-                class="title__span2">JD</span>
-            </a>
-          </li>
-          <li class="nav__item">
-            <a class="link nav__link" href="https://github.com/Shekko777" target="_blank">Ванька<span
-                class="title__span">JS</span></a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-
-    <main>
-      <!--  Мемасы  -->
-      <figure class="main__figure">
-        <figcaption class="header__figcaption">Смешные мемы</figcaption>
-        <img src="./memes.jpg" alt="memes">
-        <img src="./memes2.jpg" alt="memes html">
-      </figure>
-    </main>
-
-  </body>
+</body>
 
 </html>
