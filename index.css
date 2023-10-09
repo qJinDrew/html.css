@@ -92,7 +92,7 @@
 
 @keyframes cat-walkin {
   from {
-    transform: translateX(100px);
+    transform: translateX(250px);
   }
 
   to {
@@ -101,5 +101,5 @@
 }
 
 .cat__img {
-  animation: cat-walkin 2.9s ease-in-out infinite;
+  animation: 5s cat-walkin infinite ease-in-out alternate;
 }
