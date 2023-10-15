@@ -1,6 +1,6 @@
 # [Сайт проекта](https://qjindrew.github.io/html.css)
 
-HTML + CSS | Практика
+<p style="font-weight: 700;">CSS практика</p>
 
 ---
 
