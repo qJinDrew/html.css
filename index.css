@@ -1,0 +1,48 @@
+.header {
+	max-width: 1920px;
+	max-height: 700px;
+	background: #eeeff1;
+}
+
+.nav {
+	text-align: center;
+}
+
+img.header-top__logo {
+	max-width: 100%;
+	margin-top: 60px;
+	margin-left: 96px;
+}
+
+.nav.nav {
+	display: inline-block;
+	width: 20%;
+}
+
+ul.nav__list {
+	display: flex;
+	margin-top: 16px;
+	margin-left: 611px;
+}
+
+li {
+	list-style: none;
+}
+
+li.nav__item {
+	margin-left: 12px;
+	white-space: nowrap;
+}
+
+a {
+	text-decoration: none;
+}
+
+a.nav__link {
+	color: black;
+}
+/* !!! hover Под вопросом !!! */
+a.nav__link:hover,
+a.nav__link:focus {
+	color: #34547a;
+}
