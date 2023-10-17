@@ -1,17 +1,19 @@
+font-family: 'Roboto', sans-serif;
+
+.body {
+}
+
 .header {
 	max-width: 1920px;
 	max-height: 700px;
 	background: #eeeff1;
 }
 
-.nav {
-	text-align: center;
-}
-
 img.header-top__logo {
-	max-width: 100%;
-	margin-top: 60px;
-	margin-left: 96px;
+	margin-top: 57px;
+	margin-left: 402px;
+	text-align: center;
+	flex-shrink: 0;
 }
 
 .nav.nav {
@@ -22,7 +24,8 @@ img.header-top__logo {
 ul.nav__list {
 	display: flex;
 	margin-top: 16px;
-	margin-left: 611px;
+	padding-left: 398px;
+	padding-top: 79px;
 }
 
 li {
@@ -40,9 +43,80 @@ a {
 
 a.nav__link {
 	color: black;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	font-family: Roboto;
+	letter-spacing: 1.6px;
+	line-height: 164.063%; /* 26.25px */
+	padding-right: 42px;
 }
 /* !!! hover Под вопросом !!! */
-a.nav__link:hover,
 a.nav__link:focus {
-	color: #34547a;
+	color: var(--Accent, #34547a);
+	font-family: Roboto;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 500;
+	letter-spacing: 1.6px;
+	line-height: 164.063%; /* 26.25px */
+}
+
+div.header-content {
+	positin: relative;
+}
+
+img.header-content__img {
+	position: absolute;
+	padding-left: 487px;
+	padding-bottom: 188px;
+	width: 357px;
+	height: 233.7px;
+}
+
+div.header-content__info {
+	margin-left: 974px;
+	margin-top: 257px;
+	padding-bottom: 398px;
+	width: 541px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+}
+
+h1.header-content__title {
+	font-family: Roboto;
+	font-size: 48px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 164.063%;
+}
+
+p.header-content__text {
+	color: #727272;
+	font-family: Roboto;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 164.063%;
+}
+
+.button.header-content__button {
+	margin: 0;
+	padding: 0;
+	border: none;
+	background: #34547a;
+	width: 225px;
+	height: 65px;
+}
+button.button.header-content__button {
+	color: #fff;
+	text-align: center;
+	font-family: Roboto;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 164.063%; /* 26.25px */
+	letter-spacing: 1.6px;
 }
