@@ -1,3 +1,7 @@
+body {
+	margin: 0;
+}
+
 .header {
 	max-width: 1920px;
 	max-height: 700px;
