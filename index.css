@@ -122,7 +122,9 @@ button.button.header-content__button {
 main.main {
 	padding-top: 100px;
 }
-
+section.about {
+	background: #ffffff;
+}
 h2.about__title {
 	font-family: Roboto;
 	font-style: normal;
@@ -183,6 +185,11 @@ p.about__item-content__text {
 }
 
 /* Мои навыки */
+
+div.about__container {
+	background: #f9f9f9;
+	height: 650px;
+}
 
 div.about-skills {
 	float: left;
@@ -270,4 +277,43 @@ div.about-skills__line.js {
 	height: 4px;
 	flex-shrink: 0;
 	background: #c4c4c4;
+}
+
+/* Цекция Work */
+
+section.work {
+	background: var(--Silver, #eeeff1);
+	height: 1004px;
+	text-align: center;
+	padding: 0px;
+}
+h2.work__title {
+	padding-top: 100px;
+
+	color: #000;
+	font-family: Roboto;
+	font-size: 32px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+}
+p.work__text {
+	max-width: 540px;
+	max-height: 67px;
+	padding: 50px 690px 57px 690px;
+	color: #727272;
+	font-family: Roboto;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 164%;
+}
+iframe {
+	background: linear-gradient(
+			0deg,
+			rgba(0, 0, 0, 0.65) 0%,
+			rgba(0, 0, 0, 0.65) 100%
+		),
+		url(<path-to-image>), lightgray 50% / cover no-repeat;
+	text-align: center;
 }
