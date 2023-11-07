@@ -317,3 +317,97 @@ iframe {
 		url(<path-to-image>), lightgray 50% / cover no-repeat;
 	text-align: center;
 }
+/* Галлерея  */
+ul.gallery__list {
+	display: flex;
+	flex-flow: row nowrap;
+	flex-direction: row-reverse;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 0;
+	margin: 0;
+}
+img.gallery__img {
+	width: 475px;
+	height: 475px;
+	flex-shrink: 0;
+	padding: 0;
+	margin: 0;
+}
+li.gallery__item {
+	width: 475px;
+	height: 475px;
+	padding: 0;
+	margin: 0;
+}
+/* Галлерея компании  */
+ul.gallery__company-list {
+	display: flex;
+	justify-content: center;
+	padding: 72px 405px 100px 405px;
+}
+li.gallery__company-item {
+	padding-right: 30px;
+	width: 255px;
+	height: 120px;
+	flex-shrink: 0;
+}
+/* Контактная форма в подвале  */
+section.contact {
+	text-align: center;
+	background: var(--Silver, #eeeff1);
+}
+h2.contact__title {
+	padding: 100px 0px 50px 0px;
+	color: #000;
+	font-family: Roboto;
+	font-size: 32px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+}
+p.contact__text {
+	color: #727272;
+	font-family: Roboto;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 164%;
+	padding: 0px 690px 65px 690px;
+	width: 540px;
+	height: 67px;
+}
+
+/* Обнуление стилей */
+fieldset.form__fieldset {
+	border-style: none;
+	display: block;
+	align-items: flex-start;
+	justify-content: center;
+}
+/*Ваше имя и email */
+input.form__input,
+textarea {
+	background: #fff;
+	width: 247px;
+	height: 50px;
+	flex-shrink: 0;
+	border-style: none;
+	padding-left: 15px;
+	padding-right: 15px;
+	box-sizing: border-box;
+	resize: none;
+	justify-content: center;
+	margin-right: 1px;
+}
+/* Сообщение */
+textarea.form__textarea {
+	width: 500px;
+	height: 175px;
+	flex-shrink: 0;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 17px;
+	padding-bottom: 17px;
+	margin: 20px 690px 50px 690px;
+}
