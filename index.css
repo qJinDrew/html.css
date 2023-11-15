@@ -1,5 +1,7 @@
 body {
 	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
 }
 
 .header {
@@ -50,7 +52,7 @@ a.nav__link {
 	line-height: 164.063%; /* 26.25px */
 	margin-right: 42px;
 }
-/* !!! hover Под вопросом !!! */
+
 a.nav__link:focus {
 	color: var(--Accent, #34547a);
 	font-family: Roboto;
@@ -100,7 +102,6 @@ p.header-content__text {
 .button.header-content__button {
 	margin: 0;
 	padding: 0;
-
 	border: none;
 	background: #34547a;
 	width: 225px;
@@ -115,6 +116,7 @@ button.button.header-content__button {
 	font-weight: 400;
 	line-height: 164.063%; /* 26.25px */
 	letter-spacing: 1.6px;
+	cursor: pointer;
 }
 
 /* Обо мне */
@@ -147,6 +149,7 @@ p.about__text {
 	padding: 50px 690px 100px 690px;
 }
 .about__list {
+	margin: 0;
 	background: var(--Accent, #34547a);
 	width: 100%;
 	height: 100%;
@@ -289,7 +292,7 @@ section.work {
 }
 h2.work__title {
 	padding-top: 100px;
-
+	margin: 0;
 	color: #000;
 	font-family: Roboto;
 	font-size: 32px;
@@ -410,4 +413,85 @@ textarea.form__textarea {
 	padding-top: 17px;
 	padding-bottom: 17px;
 	margin: 20px 690px 50px 690px;
+	font-size: 14px;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 164%; /* 22.969px */
+}
+
+input.form__input {
+	font-size: 14px;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 164%; /* 22.969px */
+}
+/* Рамка при наведении на конт. форму */
+input.form__input:hover,
+input.form__input:focus,
+textarea.form__textarea:hover,
+textarea.form__textarea:focus {
+	border: none;
+	outline: 2px solid #34547a;
+}
+/* Кнопка Отправить */
+button.form__button {
+	border: none;
+	width: 190px;
+	height: 55px;
+	cursor: pointer;
+	color: #fff;
+	background: var(--Accent, #34547a);
+	text-transform: uppercase;
+	font-family: Roboto;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 164%;
+	letter-spacing: 2.1px;
+	margin-bottom: 100px;
+}
+button.form__button:hover {
+	color: #34547a;
+	background: rgba(0, 0, 0, 0);
+	box-shadow: inset 0 0 0 2px #34547a;
+	transition: 0.5s;
+}
+
+/* -- Подвал сайта -- */
+
+/* footer__about */
+footer.footer {
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	height: 151px;
+	background: var(--Accent, #34547a);
+	display: flex;
+	justify-content: space-around;
+	align-content: stretch;
+	align-items: center;
+}
+p.footer__name {
+	color: #fff;
+	font-family: Roboto;
+	font-size: 21px;
+	font-style: normal;
+	font-weight: 500;
+}
+address.footer__address {
+	color: #fff;
+	font-family: Roboto;
+	font-size: 13px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 164%;
+}
+/* footer__nav */
+ul.footer__nav {
+	display: flex;
+}
+li.footer__item {
+	margin-right: 22px;
 }
